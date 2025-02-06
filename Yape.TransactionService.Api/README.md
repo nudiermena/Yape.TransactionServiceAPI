@@ -45,7 +45,7 @@ After having the docker images running on the docker desktop App.
 
 ## Kafka Topic Setup
 
-![MassTransit Kafka](./YapeDiagram.png)
+![MassTransit Kafka](Yape.TransactionService.Api/Images/YapeDiagram.PNG)
 
 
 
