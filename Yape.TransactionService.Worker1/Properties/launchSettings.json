@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Yape.TransactionService.Worker": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

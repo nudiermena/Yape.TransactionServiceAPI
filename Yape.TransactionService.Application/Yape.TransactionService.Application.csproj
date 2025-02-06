@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" Version="10.1.0" />
+    <PackageReference Include="MassTransit" Version="8.3.6" />
+    <PackageReference Include="MassTransit.Kafka" Version="8.3.6" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yape.TransactionService.Consumers\Yape.TransactionService.Consumers.csproj" />
+    <ProjectReference Include="..\Yape.TransactionService.Contracts\Yape.TransactionService.Contracts.csproj" />
+    <ProjectReference Include="..\Yape.TransactionService.Domain\Yape.TransactionService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>    
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="MassTransit" Version="8.3.6" />    
+    <PackageReference Include="MassTransit.Kafka" Version="8.3.6" />    
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />    
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />    
+    <PackageReference Include="Serilog" Version="4.2.0" />    
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />    
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yape.TransactionService.Application\Yape.TransactionService.Application.csproj" />
+    <ProjectReference Include="..\Yape.TransactionService.Consumers\Yape.TransactionService.Consumers.csproj" />
+    <ProjectReference Include="..\Yape.TransactionService.Infrastructure\Yape.TransactionService.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
