@@ -1,8 +1,13 @@
-# MassTransit Kafka Sample
+# AntiFraud Sample Application
 
-This sample project how to use MassTransit with Kafka. The sample is explored in detail in .
+This sample project shows how to use MassTransit with Kafka Event Bus for Communication Purposes.
 
 ## Requirements
+
+
+## Run Kafka Docker Compose
+the Docker compose file contains the fundamental services to get started with the Solution
+Path: https://github.com/nudiermena/Yape.TransactionServiceAPI/blob/master/docker-compose.yml
 
 ## Database Setup
 
@@ -29,6 +34,7 @@ CREATE TABLE Antifraud (
 );
 ```
 
+
 ## Kafka Topic Setup
 
 To set up the necessary Kafka topics, follow these steps:
@@ -40,9 +46,12 @@ After having the docker images running on the docker desktop App.
     - `transaction-created`
     - `transaction-antifraudchecked`
 
+## Run the Yape.AntiFraudService Docker File
+https://github.com/nudiermena/Yape.AntiFraudService/blob/master/src/AntiFraudService.Worker/Dockerfile
 
-## Kafka Topic Setup
 
+
+## Architecture Diagram
 ![MassTransit Kafka](https://github.com/nudiermena/Yape.TransactionServiceAPI/blob/9c8d378198bf04c3bc6d8204730801e9f55ebb26/Yape.TransactionService.Api/Images/YapeDiagram.PNG)
 
 
